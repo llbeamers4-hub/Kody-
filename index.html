@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports AI - Football Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ Sports AI</h1>
+            <p>AI-Powered Football Match Predictions</p>
+        </header>
+
+        <nav class="league-selector">
+            <button class="league-btn active" data-league="premier">🏴󐁧󐁢󐁥󐁮󐁧󐁿 English League</button>
+            <button class="league-btn" data-league="laliga">🇪🇸 Spanish League</button>
+            <button class="league-btn" data-league="serie-a">🇮🇹 Italian League</button>
+            <button class="league-btn" data-league="bundesliga">🇩🇪 German League</button>
+            <button class="league-btn" data-league="ligue1">🇫🇷 French League</button>
+            <button class="league-btn" data-league="eredivisie">🇳🇱 Dutch League</button>
+        </nav>
+
+        <div class="stats-overview">
+            <div class="stat-card">
+                <h3>Total Matches</h3>
+                <p id="total-matches">56</p>
+            </div>
+            <div class="stat-card">
+                <h3>Accessible Predictions</h3>
+                <p id="accessible-count">4</p>
+            </div>
+            <div class="stat-card">
+                <h3>Accuracy Rate</h3>
+                <p id="accuracy-rate">78%</p>
+            </div>
+        </div>
+
+        <div class="matches-container">
+            <div id="premier" class="league-content active">
+                <div class="league-header">
+                    <h2>🏴󐁧󐁢󐁥󐁮󐁧󐁿 English Premier League</h2>
+                    <span class="league-badge blue">10 Matches | 2 Accessible</span>
+                </div>
+                <div class="matches-list" id="premier-matches"></div>
+            </div>
+
+            <div id="laliga" class="league-content">
+                <div class="league-header">
+                    <h2>🇪🇸 La Liga</h2>
+                    <span class="league-badge orange">10 Matches | 0 Accessible</span>
+                </div>
+                <div class="matches-list" id="laliga-matches"></div>
+            </div>
+
+            <div id="serie-a" class="league-content">
+                <div class="league-header">
+                    <h2>🇮🇹 Serie A</h2>
+                    <span class="league-badge green">10 Matches | 0 Accessible</span>
+                </div>
+                <div class="matches-list" id="serie-a-matches"></div>
+            </div>
+
+            <div id="bundesliga" class="league-content">
+                <div class="league-header">
+                    <h2>🇩🇪 Bundesliga</h2>
+                    <span class="league-badge dark-gray">9 Matches | 0 Accessible</span>
+                </div>
+                <div class="matches-list" id="bundesliga-matches"></div>
+            </div>
+
+            <div id="ligue1" class="league-content">
+                <div class="league-header">
+                    <h2>🇫🇷 Ligue 1</h2>
+                    <span class="league-badge blue">9 Matches | 0 Accessible</span>
+                </div>
+                <div class="matches-list" id="ligue1-matches"></div>
+            </div>
+
+            <div id="eredivisie" class="league-content">
+                <div class="league-header">
+                    <h2>🇳🇱 Eredivisie</h2>
+                    <span class="league-badge orange">9 Matches | 2 Accessible</span>
+                </div>
+                <div class="matches-list" id="eredivisie-matches"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Sports AI. Predictions powered by machine learning algorithms.</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
